@@ -1,5 +1,5 @@
+import {usePlayingState} from '@remotion/player';
 import React, {useEffect, useRef} from 'react';
-import {usePlayingState} from '../timeline-position-state';
 import {useAbsoluteCurrentFrame, useCurrentFrame} from '../use-frame';
 import {useUnsafeVideoConfig} from '../use-unsafe-video-config';
 import {RemotionAudioProps} from './props';

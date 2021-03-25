@@ -1,6 +1,6 @@
+import {usePlayingState} from '@remotion/player';
 import React, {useEffect, useRef} from 'react';
 import {FEATURE_FLAG_V2_BREAKING_CHANGES} from '../feature-flags';
-import {usePlayingState} from '../timeline-position-state';
 import {useAbsoluteCurrentFrame, useCurrentFrame} from '../use-frame';
 import {useUnsafeVideoConfig} from '../use-unsafe-video-config';
 import {RemotionVideoProps} from './props';

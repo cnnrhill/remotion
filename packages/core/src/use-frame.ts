@@ -1,6 +1,6 @@
+import {useTimelinePosition} from '@remotion/player';
 import {useContext} from 'react';
 import {SequenceContext} from './sequencing';
-import {useTimelinePosition} from './timeline-position-state';
 
 export const useAbsoluteCurrentFrame = (): number => {
 	const timelinePosition = useTimelinePosition();

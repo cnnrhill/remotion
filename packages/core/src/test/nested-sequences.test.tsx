@@ -1,7 +1,7 @@
+import {TimelineContext} from '@remotion/player';
 import {render} from '@testing-library/react';
 import React from 'react';
 import {Sequence} from '../sequencing';
-import {TimelineContext} from '../timeline-position-state';
 import {useCurrentFrame} from '../use-frame';
 
 test('It should calculate the correct offset in nested sequences', () => {

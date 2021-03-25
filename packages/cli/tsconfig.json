@@ -7,8 +7,8 @@
 		"skipLibCheck": true
 	},
 	"references": [
-		{ "path": "../core" },
-		{ "path": "../bundler" },
-		{ "path": "../renderer" }
+		{"path": "../core"},
+		{"path": "../bundler"},
+		{"path": "../renderer"}
 	]
 }

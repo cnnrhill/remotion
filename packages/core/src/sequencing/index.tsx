@@ -1,3 +1,4 @@
+import {TimelineContext} from '@remotion/player';
 import React, {
 	createContext,
 	useContext,
@@ -8,7 +9,6 @@ import React, {
 import {CompositionManager} from '../CompositionManager';
 import {FEATURE_FLAG_V2_BREAKING_CHANGES} from '../feature-flags';
 import {getTimelineClipName} from '../get-timeline-clip-name';
-import {TimelineContext} from '../timeline-position-state';
 import {useAbsoluteCurrentFrame} from '../use-frame';
 
 type SequenceContextType = {

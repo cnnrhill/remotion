@@ -1,15 +1,11 @@
 {
 	"extends": "../tsconfig.settings.json",
 	"compilerOptions": {
-		"rootDir": "src",
-		"outDir": "dist",
+		"composite": true,
+		"rootDir": "./src",
+		"outDir": "./dist",
 		"jsx": "react-jsx",
 		"skipLibCheck": true
 	},
-	"references": [
-		{"path": "../core"},
-		{"path": "../bundler"},
-		{"path": "../renderer"},
-		{"path": "../cli"}
-	]
+	"include": ["./src"]
 }

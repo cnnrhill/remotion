@@ -1,3 +1,9 @@
+import {
+	SetTimelineContext,
+	SetTimelineContextValue,
+	TimelineContext,
+	TimelineContextValue,
+} from '@remotion/player';
 import React, {useCallback, useLayoutEffect, useMemo, useState} from 'react';
 import {
 	CompositionManager,
@@ -6,12 +12,6 @@ import {
 	TSequence,
 } from './CompositionManager';
 import {continueRender, delayRender} from './ready-manager';
-import {
-	SetTimelineContext,
-	SetTimelineContextValue,
-	TimelineContext,
-	TimelineContextValue,
-} from './timeline-position-state';
 
 export const RemotionRoot: React.FC = ({children}) => {
 	// Wontfix, expected to have
