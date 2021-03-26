@@ -20,7 +20,11 @@ export const VideoForRendering: React.FC<RemotionVideoProps> = ({
 		if (!videoRef.current) {
 			return;
 		}
-		const frameInSeconds = frame / videoConfig.fps;
+
+		const msPerFrame = 1000 / videoConfig.fps;
+		const msShift = msPerFrame / 2; // target the middle of each frame
+		const frameInSeconds = (frame * msPerFrame + msShift) / 1000;
+
 		const handle = delayRender();
 		if (videoRef.current.currentTime === frameInSeconds) {
 			if (videoRef.current.readyState >= 2) {
