@@ -161,11 +161,12 @@ export const Index: React.FC = () => {
 				fps={30}
 				durationInFrames={10}
 			/>
+			{/* lower resolution makes frame accuracy test faster */}
 			<Composition
 				id="video-testing"
 				component={VideoTesting}
-				width={1080}
-				height={1080}
+				width={600}
+				height={600}
 				fps={30}
 				durationInFrames={100}
 			/>
