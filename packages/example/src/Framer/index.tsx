@@ -23,9 +23,7 @@ export const Framer: React.FC = () => {
 				paddingBottom: 100,
 			}}
 		>
-			<h1 style={{
-				fontSize: 120,
-			}}>{frame}</h1>
+			<h1 style={{ fontSize: 120 }}>{frame}</h1>
 		</div>
 	);
 };
