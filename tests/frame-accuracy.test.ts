@@ -61,9 +61,7 @@ test('should render correct frames from embedded videos', async () => {
             green: Math.abs(expectedColor.green - actualColor.green),
             blue: Math.abs(expectedColor.blue - actualColor.blue),
         };
-
-        console.log(actualColor, colorDistance);
-
+        
         // jpeg encoding sometimes shifts the color very slightly - so measure the distance
         // between the expected and actual colors and consider any frame not within the
         // acceptable range to be wrong
