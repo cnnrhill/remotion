@@ -1,7 +1,7 @@
 import {useCurrentFrame, random} from 'remotion';
 
 export function selectColor(color: string, frame: number): number {
-	return (random(`${color}-${frame}`) * 255) % 255;
+	return Math.floor((random(`${color}-${frame}`) * 255) % 255);
 }
 
 export const Framer: React.FC = () => {
