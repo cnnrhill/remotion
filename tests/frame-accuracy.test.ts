@@ -50,7 +50,7 @@ test('should render correct frames from embedded videos', async () => {
             const img = await jimp.read(filename);
 
             // extract the RGB color value at 5x5
-            const actualColor: any = jimp.intToRGBA(img.getPixelColor(5, 5));
+            const actualColor = jimp.intToRGBA(img.getPixelColor(5, 5));
 
             const colorDistance = {
                 red: Math.abs(expectedColor.red - actualColor.r),
