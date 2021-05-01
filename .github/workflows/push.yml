@@ -44,7 +44,7 @@ jobs:
           key: ${{ matrix.os }}-node-${{ matrix.node_version }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ matrix.os }}-node-${{ matrix.node_version }}
-      - run: npm i
+      - run: npm ci
       - run: npx lerna bootstrap --ci
       - run: npm run build
       # We need to call bootstrap again to link the CLI
